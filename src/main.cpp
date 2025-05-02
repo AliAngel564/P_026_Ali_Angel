@@ -23,31 +23,25 @@ int main(){
     double usrDouble = 23.2355;
 
     int *pUsrNumber = &usrNumber;
-    int **pPUsrNumber = &pUsrNumber;
     std::string *pUsrName = &usrName;
-    std::string **pPUsrName = &pUsrName;
     char *pUsrLetter = &usrLetter;
-    char **pPUsrLetter = &pUsrLetter;
     float *pUsrFloat = &usrFloat;
-    float **pPUsrFloat = &pUsrFloat;
     double *pUsrDouble = &usrDouble;
-    double **pPUsrDouble = &pUsrDouble;
-
 
     std::cout<<"usrName memory slot: " << &pUsrName <<"\nusrName stored value: "<<*pUsrName;
-    std::cout<<"\npointer pUsrName memory slot: " << &pPUsrName<<"\n";
+    std::cout<<"\npointer pUsrName memory slot: " << pUsrName<<"\n";
     pressAnyKey();
     std::cout<<"usrNumber memory slot: "<<&pUsrNumber<<"\nusrNumber stored value: "<<*pUsrNumber;
-    std::cout<<"\npointer pUsrNumber memory slot: " << &pPUsrNumber<<"\n";
+    std::cout<<"\npointer pUsrNumber memory slot: " << pUsrNumber<<"\n";
     pressAnyKey();
     std::cout<<"usrLetter memory slot: "<<&pUsrLetter<<"\nusrLetter stored value: "<<*pUsrLetter;
-    std::cout<<"\npointer pUsrLetter memory slot: "<<&pPUsrLetter<<"\n";
+    std::cout<<"\npointer pUsrLetter memory slot: "<<pUsrLetter<<"\n";
     pressAnyKey();
     std::cout<<"usrFloat memory slot: "<<&pUsrFloat<<"\nusrFloat stored value: "<<*pUsrFloat;
-    std::cout<<"\npointer usrFloat memory slot: "<<&pPUsrFloat<<"\n";
+    std::cout<<"\npointer usrFloat memory slot: "<<pUsrFloat<<"\n";
     pressAnyKey();
     std::cout<<"usrDouble memory slot: "<<&pUsrDouble<<"\nusrDouble stored value: "<<*pUsrDouble;
-    std::cout<<"\npointer pPUsrDouble memory slot: "<<&pPUsrDouble<<"\n";
+    std::cout<<"\npointer pPUsrDouble memory slot: "<<pUsrDouble<<"\n";
 
 }
 
