@@ -42,7 +42,6 @@ int main(){
     pressAnyKey();
     std::cout<<"usrDouble memory slot: "<<&pUsrDouble<<"\nusrDouble stored value: "<<*pUsrDouble;
     std::cout<<"\npointer pPUsrDouble memory slot: "<<pUsrDouble<<"\n";
-
 }
 
 void pressAnyKey()
